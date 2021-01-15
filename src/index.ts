@@ -1,20 +1,19 @@
-import SimpleModule from "lynx-framework/simple.module";
+import SimpleModule from 'lynx-framework/simple.module';
 
-export default class TemplateModule extends SimpleModule {
-
-    get translation(): string {
-        return __dirname + "/locale";
-    }
-
+export default class ChatModule extends SimpleModule {
     get controllers(): string {
-        return __dirname + "/controllers";
+        return __dirname + '/controllers';
     }
 
-    get views(): string {
-        return __dirname + "/views";
+    get entities(): string {
+        return __dirname + '/entities';
     }
 
     get public(): string {
-        return __dirname + "/public";
+        return __dirname + '/public';
+    }
+
+    get views(): string {
+        return __dirname + '/views';
     }
 }
